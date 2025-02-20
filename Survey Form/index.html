@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='utf-8'>
+        <meta name = 'viewport' content="width=device-width", initial-scale=1.0>
+        <title>Survey Form</title>
+        <link rel='stylesheet' href= 'styles.css'>
+    </head>
+    <body>
+        <h1 id='title'>Einbürgerung - München </h1>
+        <p id='description'>Thank you for wanting to become a German! Prost!</p>
+        <form id='survey-form'>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label id="name-label">Enter Fullname<input id='name' type="text" placeholder="What is your name?" required></label>
+                <label id="email-label">Enter Email Address</Address><input id='email' type="email" placeholder="What is your Email Address?" required></label>
+                <label id="number-label">Enter Age<input id='number' type="number" min="16" max="65" placeholder="How old are you?"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Residency Status</legend>
+                <select id="dropdown" required>
+                    <option value='blaue-karte'>Blaue Karte</option>
+                    <option value="niederlassungserlaubnis">Niederlassungserlaubnis</option>
+                    <option value="befristeter Aufenthaltstitel">Befristeter Aufenthaltstitel</option>
+                    <option value="Duldung">Duldung</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Do you have EU-Citizenship?</legend>
+                <label><input type="radio" name="eu" value="postive" required>Yes</label>
+                <label><input type="radio" name="eu" value="negative">No</label>
+            </fieldset>
+
+        </form>
+
+    </body>
+</html>
