@@ -1,0 +1,50 @@
+# Inspector Module
+[ ] Set up basic PyQt6 app with a main window
+[ ] Create a menu bar with options for loading files and templates
+[ ] Add file open dialog to load .mf4 files
+[ ] Implement a signal list view to display loaded signals
+[ ] Add a plot area to visualize selected signals
+[ ] Implement signal selection and highlighting in the plot
+[ ] Add a status bar to show current file/template info
+[ ] Display loaded file's signal list in UI
+[ ] Show sample plots or signal previews
+
+
+# Test Builder Module
+[ ] Create a GUI for building test templates
+[ ] Allow users to define signal limits and rules
+[ ] Save templates in a structured format (JSON/YAML)
+[ ] Load existing templates for editing
+[ ] Validate template structure before saving
+[ ] Decide on template format (JSON/YAML)
+[ ] Define test parameters (signal names, limits, units, etc.)
+[ ] Implement loader for template files
+[ ] Add logic to match templates to filenames or metadata
+[ ] Create CLI tool or form to build/edit templates
+
+# Analyzer Module
+[ ] Load selected MDF file into memory
+[ ] Match file to appropriate test template
+[ ] Analyze each signal using template rules
+[ ] Return result flags: OK / WARNING / FAIL
+[ ] Store results locally for future inspection
+
+# File Watcher Module
+[ ] Monitor a specific folder on the company server
+[ ] Detect new or modified .mf4 files
+[ ] Trigger analysis when new files are detected
+[ ] Notify users of new analysis results
+[ ] Implement a simple file watcher using watchdog or similar library
+[ ] Store analysis results persistently (e.g., JSON or SQLite)
+
+# Inspector UI Enhancements
+[ ] Show analysis status badges in UI
+[ ] Highlight flagged signals visually
+[ ] Add search/filter options for signal list
+[ ] Enable loading and switching between templates
+[ ] Export analysis summary to file (CSV, PDF)
+
+# Optional/Nice to Have
+[ ] Dark mode theme for UI
+[ ] Support drag & drop of files into window
+[ ] Add log window to show internal status/debug info

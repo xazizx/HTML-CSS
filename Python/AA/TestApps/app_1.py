@@ -96,6 +96,6 @@ button2.clicked.connect(random_word2_and_count)
 button3.clicked.connect(random_word3_and_count)
 button4.clicked.connect(reset)
 
-# show/run app 
+ 
 main_window.show()
 sys.exit(app.exec())
